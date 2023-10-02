@@ -4,11 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": {
-    "env": {
-      "PRISMA_GENERATE": "true"
-    }
-  },
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
